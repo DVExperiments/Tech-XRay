@@ -1,0 +1,31 @@
+{
+  "title": "Tech X-Ray",
+  "tagline": "See beyond the headline.",
+  "description": "An interactive technology literacy lab. Investigate emerging technologies by sorting their capabilities, dependencies, constraints and stakeholders, then uncover the hidden requirements behind each system.",
+  "category": "Tools",
+  "platform": "Browser / HTML, CSS & JavaScript",
+  "year": "2026",
+  "overview": [
+    "Tech X-Ray is a free, offline-first learning activity inspired by systems thinking and Contextual Adaptation in technological futures education. Start with an emerging technology, then separate what it can do from everything required to make it work.",
+    "Classify twelve evidence cards into four layers, identify three critical dependencies, and reflect on how the technology might operate in education, workplaces, communities or ecological contexts.",
+    "Finally, reveal three often-overlooked dependencies and compare your reasoning against a curated reference. Save attempts locally and export your work for a digital learning portfolio."
+  ],
+  "highlights": [
+    "12 emerging technologies with 144 curated evidence cards",
+    "Four X-Ray layers: capabilities, dependencies, constraints and stakeholders",
+    "36 intentionally hidden dependencies, revealed at the end",
+    "Drag-and-drop and accessible dropdown sorting",
+    "Select three critical dependencies and complete four contextual reflections",
+    "Transparent offline formative feedback out of 100, with explanations",
+    "Contextual I'm Stuck guidance without giving away answers",
+    "Private browser history, Markdown exports, JSON backup and restore",
+    "Responsive, GitHub Pages ready and free of accounts, subscriptions and API keys"
+  ],
+  "tags": ["Emerging Technology", "Systems Thinking", "Design Thinking", "Technological Futures", "Education", "Digital Literacy", "Learning", "Browser", "Ethics"],
+  "cover": "assets/cover.svg",
+  "imageAlt": "Tech X-Ray circular scanning diagram with capabilities, dependencies, constraints and stakeholders",
+  "embed": true,
+  "featured": false,
+  "visible": true,
+  "notice": "An educational practice activity, not a technical audit. Scores measure reference classification and reflection completion, not factual accuracy. History is stored in each visitor's browser."
+}

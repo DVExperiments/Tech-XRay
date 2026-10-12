@@ -1,0 +1,1359 @@
+{
+  "version": 1,
+  "contexts": [
+    {
+      "id": "education",
+      "label": "Education & learning",
+      "question": "What must learners and teaching staff understand or be able to do, and who might be left out?"
+    },
+    {
+      "id": "business",
+      "label": "Workplace & business",
+      "question": "How would this change work, skills, accountability and cost in a real organisation?"
+    },
+    {
+      "id": "community",
+      "label": "Community & public life",
+      "question": "Whose voice or local knowledge should shape deployment, access and consent?"
+    },
+    {
+      "id": "environment",
+      "label": "Environment & place",
+      "question": "What energy, materials, infrastructure and ecological effects may be hidden by the headline?"
+    }
+  ],
+  "technologies": [
+    {
+      "id": "genai",
+      "title": "Generative AI",
+      "field": "Computing",
+      "icon": "✦",
+      "teaser": "Systems that generate text, images, audio or code from learned patterns.",
+      "scenario": "A team wants to introduce a generative AI assistant into everyday work.",
+      "cards": [
+        {
+          "id": "genai-1",
+          "text": "Drafts text and summarises material from prompts.",
+          "layer": "does",
+          "why": "Generating content is a capability, although output quality varies.",
+          "critical": false
+        },
+        {
+          "id": "genai-2",
+          "text": "Can produce plausible but false statements.",
+          "layer": "limits",
+          "why": "Confident errors are a limitation that calls for verification.",
+          "critical": false
+        },
+        {
+          "id": "genai-3",
+          "text": "Relies on model weights and computing infrastructure.",
+          "layer": "needs",
+          "why": "Models require execution hardware and a deployed software system.",
+          "critical": true
+        },
+        {
+          "id": "genai-4",
+          "text": "Workers may gain speed but face changes in tasks and expectations.",
+          "layer": "affects",
+          "why": "The workforce experiences both potential benefits and organisational impacts.",
+          "critical": false
+        },
+        {
+          "id": "genai-5",
+          "text": "Requires appropriate access to input data and documents.",
+          "layer": "needs",
+          "why": "The usefulness and risks depend on which information the model can access.",
+          "critical": true
+        },
+        {
+          "id": "genai-6",
+          "text": "May assist with translation and idea generation.",
+          "layer": "does",
+          "why": "Supporting drafting and language tasks is a possible function.",
+          "critical": false
+        },
+        {
+          "id": "genai-7",
+          "text": "Sensitive prompts could disclose private information.",
+          "layer": "limits",
+          "why": "Data privacy is a constraint on safe deployment.",
+          "critical": false
+        },
+        {
+          "id": "genai-8",
+          "text": "Needs evaluation and human checking in consequential uses.",
+          "layer": "needs",
+          "why": "Oversight and testing are operational requirements for dependable use.",
+          "critical": true
+        },
+        {
+          "id": "genai-9",
+          "text": "Clients or learners may receive more accessible explanations.",
+          "layer": "affects",
+          "why": "The people receiving AI-supported work can be affected.",
+          "critical": false
+        },
+        {
+          "id": "genai-10",
+          "text": "Can adapt the style of a response for a target audience.",
+          "layer": "does",
+          "why": "Prompt-based tailoring is a capability.",
+          "critical": false
+        },
+        {
+          "id": "genai-11",
+          "text": "Depends on network connectivity for cloud-hosted models.",
+          "layer": "needs",
+          "why": "Cloud services need connectivity, although some models can run locally.",
+          "critical": false
+        },
+        {
+          "id": "genai-12",
+          "text": "May inherit patterns or biases present in training data.",
+          "layer": "limits",
+          "why": "Unequal or biased outputs are a quality and fairness limitation.",
+          "critical": false
+        }
+      ],
+      "blindspots": [
+        {
+          "title": "Accountability and escalation",
+          "explanation": "Someone must own mistakes, exceptions and decisions when the model is wrong.",
+          "question": "Who can intervene or override the model?"
+        },
+        {
+          "title": "Data governance",
+          "explanation": "Retention, consent, permitted use and access rules matter as much as the model itself.",
+          "question": "Can you explain where prompts and outputs go?"
+        },
+        {
+          "title": "Ongoing maintenance",
+          "explanation": "Models, policies, costs and user practices change after launch.",
+          "question": "How will you detect performance drift or misuse?"
+        }
+      ]
+    },
+    {
+      "id": "digital-twins",
+      "title": "Digital Twins",
+      "field": "Systems",
+      "icon": "◎",
+      "teaser": "A continuously informed digital representation of a physical system or process.",
+      "scenario": "A city is considering a digital twin to improve how it manages infrastructure.",
+      "cards": [
+        {
+          "id": "digital-twins-1",
+          "text": "Simulates what-if changes before trying them physically.",
+          "layer": "does",
+          "why": "Scenario testing is a central potential use of a digital twin.",
+          "critical": false
+        },
+        {
+          "id": "digital-twins-2",
+          "text": "Requires reliable information about the real system.",
+          "layer": "needs",
+          "why": "A twin is only as useful as the quality of its model and data.",
+          "critical": true
+        },
+        {
+          "id": "digital-twins-3",
+          "text": "Outdated sensors can create a misleading picture.",
+          "layer": "limits",
+          "why": "Poor data can make the representation inaccurate.",
+          "critical": false
+        },
+        {
+          "id": "digital-twins-4",
+          "text": "Infrastructure operators can use it to plan maintenance.",
+          "layer": "affects",
+          "why": "Operators are a primary stakeholder group.",
+          "critical": false
+        },
+        {
+          "id": "digital-twins-5",
+          "text": "Needs a way to refresh data as conditions change.",
+          "layer": "needs",
+          "why": "A living twin needs suitable data collection and integration.",
+          "critical": true
+        },
+        {
+          "id": "digital-twins-6",
+          "text": "Can visualise assets, flows and system behaviour.",
+          "layer": "does",
+          "why": "Making complex system states visible is a capability.",
+          "critical": false
+        },
+        {
+          "id": "digital-twins-7",
+          "text": "Building and validating detailed models takes resources.",
+          "layer": "limits",
+          "why": "Model fidelity, cost and effort constrain adoption.",
+          "critical": false
+        },
+        {
+          "id": "digital-twins-8",
+          "text": "Residents may be affected by decisions informed by it.",
+          "layer": "affects",
+          "why": "People outside the technical team can experience downstream consequences.",
+          "critical": false
+        },
+        {
+          "id": "digital-twins-9",
+          "text": "Depends on clearly defined model boundaries.",
+          "layer": "needs",
+          "why": "A twin must specify what is represented and what is not.",
+          "critical": true
+        },
+        {
+          "id": "digital-twins-10",
+          "text": "Can flag possible asset failures from patterns in data.",
+          "layer": "does",
+          "why": "Analysis can help anticipate problems where data and models support it.",
+          "critical": false
+        },
+        {
+          "id": "digital-twins-11",
+          "text": "Requires people who can interpret and challenge outputs.",
+          "layer": "needs",
+          "why": "Expertise is needed to use the model responsibly.",
+          "critical": false
+        },
+        {
+          "id": "digital-twins-12",
+          "text": "Cannot represent every unexpected real-world event.",
+          "layer": "limits",
+          "why": "Models are simplifications, not perfect copies of reality.",
+          "critical": false
+        }
+      ],
+      "blindspots": [
+        {
+          "title": "Model ownership",
+          "explanation": "Maintenance responsibility and update processes are essential after the first demonstration.",
+          "question": "Who keeps the twin accurate next year?"
+        },
+        {
+          "title": "Interoperability",
+          "explanation": "Data often spans vendors, formats and departments that do not communicate cleanly.",
+          "question": "Which data systems must connect?"
+        },
+        {
+          "title": "Decision pathways",
+          "explanation": "A useful simulation does not automatically lead to better action.",
+          "question": "Who decides what to do with model outputs?"
+        }
+      ]
+    },
+    {
+      "id": "ar",
+      "title": "Augmented Reality",
+      "field": "Interfaces",
+      "icon": "◈",
+      "teaser": "Digital information layered into a person’s view of the physical world.",
+      "scenario": "An organisation wants to use augmented reality for workplace learning.",
+      "cards": [
+        {
+          "id": "ar-1",
+          "text": "Places visual instructions over a real task.",
+          "layer": "does",
+          "why": "Overlaying guidance is a common AR function.",
+          "critical": false
+        },
+        {
+          "id": "ar-2",
+          "text": "Needs suitable screens, cameras or wearable hardware.",
+          "layer": "needs",
+          "why": "An interface must display digital content in the user’s environment.",
+          "critical": true
+        },
+        {
+          "id": "ar-3",
+          "text": "Eye strain or discomfort can interrupt use.",
+          "layer": "limits",
+          "why": "Ergonomics affects how long and how safely people can use it.",
+          "critical": false
+        },
+        {
+          "id": "ar-4",
+          "text": "Learners may get contextual guidance at the point of work.",
+          "layer": "affects",
+          "why": "The people being trained are directly affected.",
+          "critical": false
+        },
+        {
+          "id": "ar-5",
+          "text": "Requires a way to track position and surfaces.",
+          "layer": "needs",
+          "why": "Registration and tracking help digital objects line up with the world.",
+          "critical": true
+        },
+        {
+          "id": "ar-6",
+          "text": "Can show a 3D model at real-world scale.",
+          "layer": "does",
+          "why": "Spatial placement is an AR capability.",
+          "critical": false
+        },
+        {
+          "id": "ar-7",
+          "text": "Occlusion and poor tracking can cause misalignment.",
+          "layer": "limits",
+          "why": "Inaccurate overlays can reduce usability or trust.",
+          "critical": false
+        },
+        {
+          "id": "ar-8",
+          "text": "Bystanders can be affected by cameras in shared spaces.",
+          "layer": "affects",
+          "why": "Camera-based interaction raises concerns beyond the primary user.",
+          "critical": false
+        },
+        {
+          "id": "ar-9",
+          "text": "Needs content designed for the specific task and environment.",
+          "layer": "needs",
+          "why": "Context-sensitive content is essential for meaningful use.",
+          "critical": true
+        },
+        {
+          "id": "ar-10",
+          "text": "Can reveal hidden components of equipment visually.",
+          "layer": "does",
+          "why": "AR can illustrate information not directly visible.",
+          "critical": false
+        },
+        {
+          "id": "ar-11",
+          "text": "Depends on device power and battery life.",
+          "layer": "needs",
+          "why": "Wearable or mobile systems need adequate power.",
+          "critical": false
+        },
+        {
+          "id": "ar-12",
+          "text": "Bright light, clutter or accessibility needs may limit usability.",
+          "layer": "limits",
+          "why": "Environmental and human differences affect performance.",
+          "critical": false
+        }
+      ],
+      "blindspots": [
+        {
+          "title": "Physical safety",
+          "explanation": "Users need to see hazards and stay attentive to their surroundings.",
+          "question": "Could an overlay hide a risk?"
+        },
+        {
+          "title": "Accessibility alternatives",
+          "explanation": "Not everyone can comfortably use headsets, gestures or visual cues.",
+          "question": "What equivalent non-AR pathway exists?"
+        },
+        {
+          "title": "Consent in shared spaces",
+          "explanation": "Bystanders may not expect a device to capture images of them.",
+          "question": "What is captured, stored or shared?"
+        }
+      ]
+    },
+    {
+      "id": "edge-ai",
+      "title": "Edge AI",
+      "field": "Computing",
+      "icon": "⌁",
+      "teaser": "Running AI inference near where data is produced, rather than always in a distant cloud.",
+      "scenario": "A manufacturer is exploring AI analysis on devices on the factory floor.",
+      "cards": [
+        {
+          "id": "edge-ai-1",
+          "text": "Can analyse sensor data without sending every event to the cloud.",
+          "layer": "does",
+          "why": "Local inference is a central capability of edge AI.",
+          "critical": false
+        },
+        {
+          "id": "edge-ai-2",
+          "text": "Needs hardware powerful enough for the chosen model.",
+          "layer": "needs",
+          "why": "Processor, memory and acceleration limit which models can run.",
+          "critical": true
+        },
+        {
+          "id": "edge-ai-3",
+          "text": "Small devices may struggle with large models.",
+          "layer": "limits",
+          "why": "Compute, memory and energy budgets constrain performance.",
+          "critical": false
+        },
+        {
+          "id": "edge-ai-4",
+          "text": "Maintenance teams may receive faster fault alerts.",
+          "layer": "affects",
+          "why": "Operators and staff can be affected by predictions and alerts.",
+          "critical": false
+        },
+        {
+          "id": "edge-ai-5",
+          "text": "Requires a model packaged for the target device.",
+          "layer": "needs",
+          "why": "Deployment and optimisation must match hardware constraints.",
+          "critical": true
+        },
+        {
+          "id": "edge-ai-6",
+          "text": "Can reduce latency for some real-time decisions.",
+          "layer": "does",
+          "why": "Processing nearby often shortens the network round trip.",
+          "critical": false
+        },
+        {
+          "id": "edge-ai-7",
+          "text": "Different devices make updating software harder.",
+          "layer": "limits",
+          "why": "Fleet management is an operational challenge.",
+          "critical": false
+        },
+        {
+          "id": "edge-ai-8",
+          "text": "People being monitored may have privacy concerns.",
+          "layer": "affects",
+          "why": "Sensor-based systems can affect workers or community members.",
+          "critical": false
+        },
+        {
+          "id": "edge-ai-9",
+          "text": "Needs an approach for distributing secure updates.",
+          "layer": "needs",
+          "why": "Devices must receive patches and model changes safely.",
+          "critical": true
+        },
+        {
+          "id": "edge-ai-10",
+          "text": "Can continue some functions during a network outage.",
+          "layer": "does",
+          "why": "Local operation can reduce dependence on constant connectivity.",
+          "critical": false
+        },
+        {
+          "id": "edge-ai-11",
+          "text": "Depends on sufficient sensor input quality.",
+          "layer": "needs",
+          "why": "Poor observations cannot reliably support useful predictions.",
+          "critical": false
+        },
+        {
+          "id": "edge-ai-12",
+          "text": "Offline operation does not guarantee privacy.",
+          "layer": "limits",
+          "why": "Local devices can still log, share or leak personal data.",
+          "critical": false
+        }
+      ],
+      "blindspots": [
+        {
+          "title": "Device lifecycle",
+          "explanation": "A deployed device needs support long after its first software release.",
+          "question": "How will older devices be patched?"
+        },
+        {
+          "title": "Physical security",
+          "explanation": "Hardware in public or distributed locations can be stolen or tampered with.",
+          "question": "What happens if someone accesses the device?"
+        },
+        {
+          "title": "Fallbacks",
+          "explanation": "Local automated decisions still need safe behaviour when sensors or models fail.",
+          "question": "What is the safe default when confidence is low?"
+        }
+      ]
+    },
+    {
+      "id": "robots",
+      "title": "Autonomous Delivery Robots",
+      "field": "Robotics",
+      "icon": "▣",
+      "teaser": "Mobile robots that move items through mapped or partially understood environments.",
+      "scenario": "A campus is considering robots to deliver supplies between buildings.",
+      "cards": [
+        {
+          "id": "robots-1",
+          "text": "Can move small loads with limited direct supervision.",
+          "layer": "does",
+          "why": "Transporting goods is the robot’s intended service.",
+          "critical": false
+        },
+        {
+          "id": "robots-2",
+          "text": "Needs localisation, mapping and obstacle detection.",
+          "layer": "needs",
+          "why": "Navigation requires sensing where the robot is and what is nearby.",
+          "critical": true
+        },
+        {
+          "id": "robots-3",
+          "text": "Uneven paths, stairs and weather limit reliable routes.",
+          "layer": "limits",
+          "why": "Physical environments impose practical constraints.",
+          "critical": false
+        },
+        {
+          "id": "robots-4",
+          "text": "Pedestrians and people using mobility aids share the space.",
+          "layer": "affects",
+          "why": "Public users of paths can be affected, whether or not they use the service.",
+          "critical": false
+        },
+        {
+          "id": "robots-5",
+          "text": "Requires reliable charging and maintenance arrangements.",
+          "layer": "needs",
+          "why": "Power and upkeep support day-to-day operation.",
+          "critical": true
+        },
+        {
+          "id": "robots-6",
+          "text": "Can follow a route and adjust around obstacles.",
+          "layer": "does",
+          "why": "Path planning and avoidance are capabilities.",
+          "critical": false
+        },
+        {
+          "id": "robots-7",
+          "text": "Some edge cases still require remote human help.",
+          "layer": "limits",
+          "why": "Real-world autonomy is bounded and can need intervention.",
+          "critical": false
+        },
+        {
+          "id": "robots-8",
+          "text": "Delivery workers and logistics teams may see tasks change.",
+          "layer": "affects",
+          "why": "Automation changes job workflows.",
+          "critical": false
+        },
+        {
+          "id": "robots-9",
+          "text": "Needs appropriate permissions to operate in its area.",
+          "layer": "needs",
+          "why": "Site rules and applicable law shape deployment.",
+          "critical": true
+        },
+        {
+          "id": "robots-10",
+          "text": "May provide predictable tracking and delivery updates.",
+          "layer": "does",
+          "why": "Status reporting can make logistics more visible.",
+          "critical": false
+        },
+        {
+          "id": "robots-11",
+          "text": "Depends on a reliable way to load and receive parcels.",
+          "layer": "needs",
+          "why": "The whole service needs hand-off processes, not just motion.",
+          "critical": false
+        },
+        {
+          "id": "robots-12",
+          "text": "Vandalism or blocked routes can interrupt operation.",
+          "layer": "limits",
+          "why": "Uncontrolled environments introduce disruption.",
+          "critical": false
+        }
+      ],
+      "blindspots": [
+        {
+          "title": "Inclusive route design",
+          "explanation": "Routes must not block footpaths or create disproportionate accessibility barriers.",
+          "question": "Would the robot obstruct wheelchair users?"
+        },
+        {
+          "title": "Human override",
+          "explanation": "Staff need to recover stuck units and handle unusual incidents.",
+          "question": "Who responds when the robot stops?"
+        },
+        {
+          "title": "Service economics",
+          "explanation": "Purchase price is only one part of staffing, upkeep and replacement costs.",
+          "question": "What does a full year of operation cost?"
+        }
+      ]
+    },
+    {
+      "id": "synbio",
+      "title": "Synthetic Biology",
+      "field": "Biotechnology",
+      "icon": "❋",
+      "teaser": "Engineering biological systems to perform useful functions.",
+      "scenario": "A team is considering engineered microbes for a new material or manufacturing process.",
+      "cards": [
+        {
+          "id": "synbio-1",
+          "text": "Can modify organisms to produce useful molecules.",
+          "layer": "does",
+          "why": "Engineering pathways for a desired output is a possible application.",
+          "critical": false
+        },
+        {
+          "id": "synbio-2",
+          "text": "Requires a suitable biological host and design.",
+          "layer": "needs",
+          "why": "The organism and engineered system must support the intended function.",
+          "critical": true
+        },
+        {
+          "id": "synbio-3",
+          "text": "Biological performance may change outside lab conditions.",
+          "layer": "limits",
+          "why": "Living systems can behave differently across environments.",
+          "critical": false
+        },
+        {
+          "id": "synbio-4",
+          "text": "Communities may have concerns about environmental release.",
+          "layer": "affects",
+          "why": "People in affected areas have legitimate stakes in decisions.",
+          "critical": false
+        },
+        {
+          "id": "synbio-5",
+          "text": "Needs controlled testing and validated measurements.",
+          "layer": "needs",
+          "why": "Evidence of performance and safety depends on good experiments.",
+          "critical": true
+        },
+        {
+          "id": "synbio-6",
+          "text": "Can support new enzymes, materials or production methods.",
+          "layer": "does",
+          "why": "Biological manufacturing is a potential capability.",
+          "critical": false
+        },
+        {
+          "id": "synbio-7",
+          "text": "Scaling from a lab to a factory can be difficult.",
+          "layer": "limits",
+          "why": "Industrial conditions introduce yield and cost challenges.",
+          "critical": false
+        },
+        {
+          "id": "synbio-8",
+          "text": "Workers may require new laboratory and safety skills.",
+          "layer": "affects",
+          "why": "Operational roles and training requirements can change.",
+          "critical": false
+        },
+        {
+          "id": "synbio-9",
+          "text": "Depends on appropriate biosafety controls and governance.",
+          "layer": "needs",
+          "why": "Containment, oversight and rules are part of responsible use.",
+          "critical": true
+        },
+        {
+          "id": "synbio-10",
+          "text": "Can make some production processes more targeted.",
+          "layer": "does",
+          "why": "Designed organisms can carry out specific transformations.",
+          "critical": false
+        },
+        {
+          "id": "synbio-11",
+          "text": "Needs nutrients, equipment and reliable process conditions.",
+          "layer": "needs",
+          "why": "Biological production depends on a stable operating environment.",
+          "critical": false
+        },
+        {
+          "id": "synbio-12",
+          "text": "Unintended biological effects require evaluation.",
+          "layer": "limits",
+          "why": "Complex biological interactions create uncertainty.",
+          "critical": false
+        }
+      ],
+      "blindspots": [
+        {
+          "title": "Life-cycle impact",
+          "explanation": "A biological process is not automatically lower-impact once inputs and waste are counted.",
+          "question": "What energy, feedstocks and disposal routes are involved?"
+        },
+        {
+          "title": "Community engagement",
+          "explanation": "A project can affect groups whose views differ from the technical team’s.",
+          "question": "Who should shape the project before trials?"
+        },
+        {
+          "title": "Containment and recovery",
+          "explanation": "Responsible deployment must account for unexpected escape or process failure.",
+          "question": "What happens if containment fails?"
+        }
+      ]
+    },
+    {
+      "id": "quantum",
+      "title": "Quantum Computing",
+      "field": "Computing",
+      "icon": "✳",
+      "teaser": "Computing systems that manipulate quantum information rather than only classical bits.",
+      "scenario": "An organisation is evaluating whether quantum computing could help with complex problems.",
+      "cards": [
+        {
+          "id": "quantum-1",
+          "text": "May accelerate certain specialised algorithms.",
+          "layer": "does",
+          "why": "Quantum advantage is problem- and method-dependent, not universal.",
+          "critical": false
+        },
+        {
+          "id": "quantum-2",
+          "text": "Needs high-quality qubits and precise control systems.",
+          "layer": "needs",
+          "why": "Useful computation depends on quantum hardware and control.",
+          "critical": true
+        },
+        {
+          "id": "quantum-3",
+          "text": "Qubits are susceptible to noise and errors.",
+          "layer": "limits",
+          "why": "Noise is a major barrier to reliable long calculations.",
+          "critical": false
+        },
+        {
+          "id": "quantum-4",
+          "text": "Researchers and specialised technical teams may benefit first.",
+          "layer": "affects",
+          "why": "Early adoption tends to involve organisations with relevant expertise.",
+          "critical": false
+        },
+        {
+          "id": "quantum-5",
+          "text": "Requires suitable algorithms for the target problem.",
+          "layer": "needs",
+          "why": "A quantum device is not automatically useful for every workload.",
+          "critical": true
+        },
+        {
+          "id": "quantum-6",
+          "text": "Can explore quantum systems through simulation techniques.",
+          "layer": "does",
+          "why": "Modelling quantum behaviour is an important potential use case.",
+          "critical": false
+        },
+        {
+          "id": "quantum-7",
+          "text": "Fault-tolerant, large-scale capabilities remain difficult.",
+          "layer": "limits",
+          "why": "Present systems have limitations and should not be oversold.",
+          "critical": false
+        },
+        {
+          "id": "quantum-8",
+          "text": "Cybersecurity teams must plan for future cryptographic risks.",
+          "layer": "affects",
+          "why": "Long-term cryptographic transition planning affects institutions.",
+          "critical": false
+        },
+        {
+          "id": "quantum-9",
+          "text": "Needs error-management and calibration strategies.",
+          "layer": "needs",
+          "why": "Maintaining useful calculations requires active error mitigation or correction.",
+          "critical": true
+        },
+        {
+          "id": "quantum-10",
+          "text": "Uses superposition and entanglement as computational resources.",
+          "layer": "does",
+          "why": "These quantum properties underpin classes of algorithms.",
+          "critical": false
+        },
+        {
+          "id": "quantum-11",
+          "text": "Some hardware designs require extreme cooling or vacuum systems.",
+          "layer": "needs",
+          "why": "Physical requirements vary by qubit technology.",
+          "critical": false
+        },
+        {
+          "id": "quantum-12",
+          "text": "Does not simply make all conventional computers obsolete.",
+          "layer": "limits",
+          "why": "Quantum devices are specialised tools, not general-purpose replacements.",
+          "critical": false
+        }
+      ],
+      "blindspots": [
+        {
+          "title": "Benchmark fairness",
+          "explanation": "Quantum claims should be compared against strong classical baselines.",
+          "question": "Which classical method was the benchmark?"
+        },
+        {
+          "title": "Hybrid workflows",
+          "explanation": "Quantum and classical computing often need to work together.",
+          "question": "Where does the quantum step sit in the full task?"
+        },
+        {
+          "title": "Skills and access",
+          "explanation": "Access to devices and people who understand them can be a major bottleneck.",
+          "question": "Who can validate and use the result?"
+        }
+      ]
+    },
+    {
+      "id": "hydrogen",
+      "title": "Green Hydrogen",
+      "field": "Energy",
+      "icon": "◉",
+      "teaser": "Hydrogen produced through electrolysis powered by low-emissions electricity.",
+      "scenario": "A region is exploring green hydrogen for industrial use or transport.",
+      "cards": [
+        {
+          "id": "hydrogen-1",
+          "text": "Can provide a fuel or feedstock for selected applications.",
+          "layer": "does",
+          "why": "Hydrogen can supply chemical and energy services.",
+          "critical": false
+        },
+        {
+          "id": "hydrogen-2",
+          "text": "Needs electricity and water to run electrolysers.",
+          "layer": "needs",
+          "why": "Electrolysis splits water using electrical energy.",
+          "critical": true
+        },
+        {
+          "id": "hydrogen-3",
+          "text": "Energy losses occur in production, storage and use.",
+          "layer": "limits",
+          "why": "Conversion steps reduce the efficiency of the full pathway.",
+          "critical": false
+        },
+        {
+          "id": "hydrogen-4",
+          "text": "Industrial workers and nearby communities may be affected.",
+          "layer": "affects",
+          "why": "New facilities change local jobs and infrastructure.",
+          "critical": false
+        },
+        {
+          "id": "hydrogen-5",
+          "text": "Requires suitable storage and transport infrastructure.",
+          "layer": "needs",
+          "why": "Hydrogen handling needs purpose-built systems and controls.",
+          "critical": true
+        },
+        {
+          "id": "hydrogen-6",
+          "text": "Could replace some fossil-derived hydrogen in industry.",
+          "layer": "does",
+          "why": "Substitution in existing industrial demand is a credible use.",
+          "critical": false
+        },
+        {
+          "id": "hydrogen-7",
+          "text": "High costs can limit commercial competitiveness.",
+          "layer": "limits",
+          "why": "Costs depend on electricity, equipment and utilisation.",
+          "critical": false
+        },
+        {
+          "id": "hydrogen-8",
+          "text": "Electricity users may compete for low-emissions power.",
+          "layer": "affects",
+          "why": "Energy allocation can have broader system consequences.",
+          "critical": false
+        },
+        {
+          "id": "hydrogen-9",
+          "text": "Needs safety procedures for a highly flammable gas.",
+          "layer": "needs",
+          "why": "Safe storage, ventilation and leak detection are crucial.",
+          "critical": true
+        },
+        {
+          "id": "hydrogen-10",
+          "text": "Can store energy for later conversion, with losses.",
+          "layer": "does",
+          "why": "Energy storage is possible but not always the most efficient use.",
+          "critical": false
+        },
+        {
+          "id": "hydrogen-11",
+          "text": "Depends on credible assessment of electricity emissions.",
+          "layer": "needs",
+          "why": "Environmental claims depend on how the power is generated.",
+          "critical": false
+        },
+        {
+          "id": "hydrogen-12",
+          "text": "Is unlikely to be the best option for every energy need.",
+          "layer": "limits",
+          "why": "Direct electrification may be more efficient in many cases.",
+          "critical": false
+        }
+      ],
+      "blindspots": [
+        {
+          "title": "Opportunity cost of power",
+          "explanation": "Limited clean electricity could instead directly decarbonise other activities.",
+          "question": "What use of the electricity gives the best outcome?"
+        },
+        {
+          "title": "Water and place",
+          "explanation": "Water sourcing and local ecology need assessment in context.",
+          "question": "Who else relies on this water source?"
+        },
+        {
+          "title": "End-to-end carbon accounting",
+          "explanation": "Production labels alone may hide transport, leakage and energy-system emissions.",
+          "question": "Where are the system boundaries for the carbon claim?"
+        }
+      ]
+    },
+    {
+      "id": "bioprint",
+      "title": "3D Bioprinting",
+      "field": "Biotechnology",
+      "icon": "▥",
+      "teaser": "Layer-by-layer deposition of cells and biomaterials to form tissue-like structures.",
+      "scenario": "A research group is exploring printed tissue models for drug development.",
+      "cards": [
+        {
+          "id": "bioprint-1",
+          "text": "Can create structured tissue models for laboratory research.",
+          "layer": "does",
+          "why": "Producing tissue-like models is a current research application.",
+          "critical": false
+        },
+        {
+          "id": "bioprint-2",
+          "text": "Needs suitable cells, biomaterials and printing equipment.",
+          "layer": "needs",
+          "why": "Living structures depend on viable biological inputs and tools.",
+          "critical": true
+        },
+        {
+          "id": "bioprint-3",
+          "text": "Keeping thick tissues alive can be difficult.",
+          "layer": "limits",
+          "why": "Nutrient delivery and vascularisation remain major challenges.",
+          "critical": false
+        },
+        {
+          "id": "bioprint-4",
+          "text": "Researchers may use models to study disease or drug effects.",
+          "layer": "affects",
+          "why": "Research teams and, indirectly, patients are stakeholders.",
+          "critical": false
+        },
+        {
+          "id": "bioprint-5",
+          "text": "Requires sterile processes and careful environmental control.",
+          "layer": "needs",
+          "why": "Cell survival and contamination control depend on conditions.",
+          "critical": true
+        },
+        {
+          "id": "bioprint-6",
+          "text": "Can control where different materials and cells are deposited.",
+          "layer": "does",
+          "why": "Spatial placement is a defining technique.",
+          "critical": false
+        },
+        {
+          "id": "bioprint-7",
+          "text": "Printed structures may not behave like real organs.",
+          "layer": "limits",
+          "why": "Biological fidelity and function are not guaranteed.",
+          "critical": false
+        },
+        {
+          "id": "bioprint-8",
+          "text": "Patients may be affected by future clinical claims and choices.",
+          "layer": "affects",
+          "why": "The claims and expectations around research affect the public.",
+          "critical": false
+        },
+        {
+          "id": "bioprint-9",
+          "text": "Needs testing of cell viability and tissue function.",
+          "layer": "needs",
+          "why": "Printed appearance alone does not demonstrate biological usefulness.",
+          "critical": true
+        },
+        {
+          "id": "bioprint-10",
+          "text": "May reduce reliance on some animal models in specific research.",
+          "layer": "does",
+          "why": "Better laboratory models could replace some experiments, case by case.",
+          "critical": false
+        },
+        {
+          "id": "bioprint-11",
+          "text": "Depends on design files and reproducible print settings.",
+          "layer": "needs",
+          "why": "Repeatability requires controlled instructions and parameters.",
+          "critical": false
+        },
+        {
+          "id": "bioprint-12",
+          "text": "Printing transplant-ready organs is not a routine clinical service.",
+          "layer": "limits",
+          "why": "The leap from models to fully functional transplant organs is substantial.",
+          "critical": false
+        }
+      ],
+      "blindspots": [
+        {
+          "title": "Clinical translation",
+          "explanation": "Regulatory evidence and long-term safety would be required before medical use.",
+          "question": "What would need proving before use with a patient?"
+        },
+        {
+          "title": "Ethical cell sourcing",
+          "explanation": "Consent and provenance of biological samples matter.",
+          "question": "Where did the cells come from and with what permission?"
+        },
+        {
+          "title": "Reproducibility",
+          "explanation": "Small variations can change biological results between laboratories.",
+          "question": "Can another team reproduce the tissue properties?"
+        }
+      ]
+    },
+    {
+      "id": "smart-grid",
+      "title": "Smart Grids",
+      "field": "Energy",
+      "icon": "⊞",
+      "teaser": "Electricity networks using digital sensing and control to manage changing supply and demand.",
+      "scenario": "A council is considering smart-grid upgrades for a growing community.",
+      "cards": [
+        {
+          "id": "smart-grid-1",
+          "text": "Can improve visibility of electricity demand and network conditions.",
+          "layer": "does",
+          "why": "Network sensing and analysis help operators observe change.",
+          "critical": false
+        },
+        {
+          "id": "smart-grid-2",
+          "text": "Needs connected meters, sensors and control equipment.",
+          "layer": "needs",
+          "why": "Digital monitoring requires instrumentation.",
+          "critical": true
+        },
+        {
+          "id": "smart-grid-3",
+          "text": "Cyberattacks or network outages can disrupt operations.",
+          "layer": "limits",
+          "why": "Connectivity adds new failure and security considerations.",
+          "critical": false
+        },
+        {
+          "id": "smart-grid-4",
+          "text": "Households may get new ways to understand energy use.",
+          "layer": "affects",
+          "why": "Customers can be affected by smart meters or pricing signals.",
+          "critical": false
+        },
+        {
+          "id": "smart-grid-5",
+          "text": "Requires reliable communication between network components.",
+          "layer": "needs",
+          "why": "Data and control signals must reach the right systems.",
+          "critical": true
+        },
+        {
+          "id": "smart-grid-6",
+          "text": "Can help coordinate distributed solar and batteries.",
+          "layer": "does",
+          "why": "Managing two-way flows is an important capability.",
+          "critical": false
+        },
+        {
+          "id": "smart-grid-7",
+          "text": "Legacy equipment can be expensive to integrate.",
+          "layer": "limits",
+          "why": "Old infrastructure may not support modern digital interfaces.",
+          "critical": false
+        },
+        {
+          "id": "smart-grid-8",
+          "text": "Electricity network operators may change working practices.",
+          "layer": "affects",
+          "why": "Operating teams need new tools, skills and decisions.",
+          "critical": false
+        },
+        {
+          "id": "smart-grid-9",
+          "text": "Needs clear safety rules and fallback operation.",
+          "layer": "needs",
+          "why": "Grid reliability depends on safe behaviour during errors.",
+          "critical": true
+        },
+        {
+          "id": "smart-grid-10",
+          "text": "May shift flexible consumption away from peak periods.",
+          "layer": "does",
+          "why": "Demand response can help manage peaks when appropriately designed.",
+          "critical": false
+        },
+        {
+          "id": "smart-grid-11",
+          "text": "Depends on good data handling and access controls.",
+          "layer": "needs",
+          "why": "Fine-grained use data deserves appropriate protection.",
+          "critical": false
+        },
+        {
+          "id": "smart-grid-12",
+          "text": "Benefits may be uneven for people without flexible appliances.",
+          "layer": "limits",
+          "why": "Not every customer can respond to pricing or automation.",
+          "critical": false
+        }
+      ],
+      "blindspots": [
+        {
+          "title": "Equity in incentives",
+          "explanation": "Price schemes may disadvantage those unable to shift their energy demand.",
+          "question": "Who can and cannot benefit from the programme?"
+        },
+        {
+          "title": "Operational fallback",
+          "explanation": "Manual procedures must still work if digital coordination fails.",
+          "question": "What happens when communication is lost?"
+        },
+        {
+          "title": "Community trust",
+          "explanation": "Smart-meter data may reveal routines and raise concerns.",
+          "question": "How are consumers informed and involved?"
+        }
+      ]
+    },
+    {
+      "id": "satellite",
+      "title": "Satellite Internet",
+      "field": "Infrastructure",
+      "icon": "◇",
+      "teaser": "Connectivity delivered through satellites and user terminals, including low-Earth-orbit systems.",
+      "scenario": "A remote community is weighing satellite internet as an option for connectivity.",
+      "cards": [
+        {
+          "id": "satellite-1",
+          "text": "Can deliver broadband to some areas without terrestrial fibre.",
+          "layer": "does",
+          "why": "Satellites can extend access where fixed networks are hard to reach.",
+          "critical": false
+        },
+        {
+          "id": "satellite-2",
+          "text": "Needs a compatible user terminal and suitable sky view.",
+          "layer": "needs",
+          "why": "Users need ground equipment with an appropriate link.",
+          "critical": true
+        },
+        {
+          "id": "satellite-3",
+          "text": "Weather, obstacles or congestion can affect the service.",
+          "layer": "limits",
+          "why": "Coverage and performance vary by environment and capacity.",
+          "critical": false
+        },
+        {
+          "id": "satellite-4",
+          "text": "Rural residents may gain new remote-learning opportunities.",
+          "layer": "affects",
+          "why": "People with limited existing internet are key stakeholders.",
+          "critical": false
+        },
+        {
+          "id": "satellite-5",
+          "text": "Requires a functioning satellite constellation or network.",
+          "layer": "needs",
+          "why": "The service depends on orbital infrastructure.",
+          "critical": true
+        },
+        {
+          "id": "satellite-6",
+          "text": "Can support communication after some terrestrial failures.",
+          "layer": "does",
+          "why": "Alternative paths can aid resilience in some disasters.",
+          "critical": false
+        },
+        {
+          "id": "satellite-7",
+          "text": "Affordability and power needs may block access.",
+          "layer": "limits",
+          "why": "Equipment, subscriptions and energy cost money.",
+          "critical": false
+        },
+        {
+          "id": "satellite-8",
+          "text": "Astronomers can be affected by the growing number of satellites.",
+          "layer": "affects",
+          "why": "Night-sky observation and the space environment are affected.",
+          "critical": false
+        },
+        {
+          "id": "satellite-9",
+          "text": "Needs ground gateways and wider internet connections.",
+          "layer": "needs",
+          "why": "Satellites must connect users to broader networks.",
+          "critical": true
+        },
+        {
+          "id": "satellite-10",
+          "text": "Enables mobile connectivity in suitable circumstances.",
+          "layer": "does",
+          "why": "Some services support moving vehicles or remote sites.",
+          "critical": false
+        },
+        {
+          "id": "satellite-11",
+          "text": "Depends on spectrum allocation and regulatory permissions.",
+          "layer": "needs",
+          "why": "Radio operation and coverage are subject to applicable rules.",
+          "critical": false
+        },
+        {
+          "id": "satellite-12",
+          "text": "Space debris and network congestion create external costs.",
+          "layer": "limits",
+          "why": "Scaling large constellations brings orbital and radio challenges.",
+          "critical": false
+        }
+      ],
+      "blindspots": [
+        {
+          "title": "Local support",
+          "explanation": "Equipment failures are harder to resolve where technicians are far away.",
+          "question": "Who can maintain the terminal locally?"
+        },
+        {
+          "title": "Resilience assumptions",
+          "explanation": "An outage in power or ground infrastructure can interrupt satellite access too.",
+          "question": "Which dependencies remain during an emergency?"
+        },
+        {
+          "title": "Cultural and community fit",
+          "explanation": "Service design and governance should reflect how people actually use connectivity.",
+          "question": "Who gets to define successful access?"
+        }
+      ]
+    },
+    {
+      "id": "did",
+      "title": "Decentralised Identity",
+      "field": "Infrastructure",
+      "icon": "⬡",
+      "teaser": "Approaches to digital credentials in which people or organisations can present verifiable claims.",
+      "scenario": "A training provider is considering portable digital credentials for learner achievements.",
+      "cards": [
+        {
+          "id": "did-1",
+          "text": "Can let someone present a verifiable digital credential.",
+          "layer": "does",
+          "why": "Proof of a claim is a central purpose of credential systems.",
+          "critical": false
+        },
+        {
+          "id": "did-2",
+          "text": "Needs trusted issuers and verification methods.",
+          "layer": "needs",
+          "why": "Recipients must be able to check who issued a claim.",
+          "critical": true
+        },
+        {
+          "id": "did-3",
+          "text": "Lost keys or credentials can make access difficult.",
+          "layer": "limits",
+          "why": "Recovery and usability are major implementation challenges.",
+          "critical": false
+        },
+        {
+          "id": "did-4",
+          "text": "Learners may gain greater portability for qualifications.",
+          "layer": "affects",
+          "why": "Credential holders experience the service directly.",
+          "critical": false
+        },
+        {
+          "id": "did-5",
+          "text": "Requires standards and interoperable data formats.",
+          "layer": "needs",
+          "why": "Different wallets and systems must understand one another.",
+          "critical": true
+        },
+        {
+          "id": "did-6",
+          "text": "Can support selective disclosure in some designs.",
+          "layer": "does",
+          "why": "Some credential protocols disclose only what is necessary.",
+          "critical": false
+        },
+        {
+          "id": "did-7",
+          "text": "A cryptographic proof does not guarantee a claim is true.",
+          "layer": "limits",
+          "why": "Issuers can be mistaken or dishonest despite valid signatures.",
+          "critical": false
+        },
+        {
+          "id": "did-8",
+          "text": "Employers may need new verification processes.",
+          "layer": "affects",
+          "why": "Organisations accepting credentials must adapt.",
+          "critical": false
+        },
+        {
+          "id": "did-9",
+          "text": "Needs an accessible storage and recovery experience.",
+          "layer": "needs",
+          "why": "People need to retain and regain control of their credentials.",
+          "critical": true
+        },
+        {
+          "id": "did-10",
+          "text": "Can reduce repeated manual checks of some documents.",
+          "layer": "does",
+          "why": "Digital verification can simplify workflows.",
+          "critical": false
+        },
+        {
+          "id": "did-11",
+          "text": "Depends on privacy-conscious revocation mechanisms.",
+          "layer": "needs",
+          "why": "Expired or revoked credentials must be handled appropriately.",
+          "critical": false
+        },
+        {
+          "id": "did-12",
+          "text": "Some people may lack suitable devices or digital skills.",
+          "layer": "limits",
+          "why": "Digital-only systems can widen access gaps.",
+          "critical": false
+        }
+      ],
+      "blindspots": [
+        {
+          "title": "Governance of trust",
+          "explanation": "Technical verification cannot replace decisions about whose authority is legitimate.",
+          "question": "Who decides which issuers are recognised?"
+        },
+        {
+          "title": "Consent and tracking",
+          "explanation": "Even valid credentials can be used to profile people across services.",
+          "question": "Can presentation be linked across organisations?"
+        },
+        {
+          "title": "Non-digital alternatives",
+          "explanation": "A portable wallet should not become the only way to prove eligibility.",
+          "question": "How does someone participate without a smartphone?"
+        }
+      ]
+    }
+  ]
+}

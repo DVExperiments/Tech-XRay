@@ -1,0 +1,17 @@
+TECH X-RAY — Quick start
+
+TRY IT LOCALLY
+1. Unzip.
+2. Double-click index.html (Chrome, Edge or Firefox).
+   Or, if you have Python installed on Windows, run Preview_on_Windows.bat for a localhost preview with more reliable storage.
+3. If you want to run a local server instead: open a terminal in this folder and run: python -m http.server 8000
+4. Open http://localhost:8000/ in your browser.
+
+PUBLISH TO GITHUB PAGES
+1. Create a PUBLIC GitHub repository: Tech-XRay (under your dvexperiments account).
+2. Upload all the *contents* of this folder to the repository root. Make sure index.html and dv-project.json are alongside each other in the root. Don't upload only the outer folder.
+3. Go to Settings > Pages > Deploy from a branch > main / (root) > Save.
+4. Pages URL should be https://dvexperiments.github.io/Tech-XRay/ when publishing completes.
+5. DV Experiments dashboard may discover dv-project.json automatically if its repository discovery remains enabled.
+
+Everything is free, with no API keys. Browser history stays local to each visitor.
